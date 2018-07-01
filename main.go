@@ -7,7 +7,7 @@ import (
     "google.golang.org/grpc"
     "google.golang.org/grpc/reflection"
 
-    pb "hello-proto/helloworld"
+    pb "github.com/bdelmas/hello-proto/helloworld"
 )
 
 
