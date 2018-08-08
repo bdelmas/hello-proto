@@ -1,11 +1,11 @@
-FROM golang:1.9.1
+FROM golang:latest
 
-WORKDIR /go/src/app
+WORKDIR /go/src/hello-proto
 COPY . .
 
-RUN go get -v ./...
-RUN go install -v ./...
+RUN go get
+RUN go build -o main .
 
 EXPOSE 50051
 
-CMD [ "hello-proto" ]
+CMD [ "./main" ]
